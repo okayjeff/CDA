@@ -23,7 +23,7 @@ for (let row = 1; row <= GRIDSIZE; row++) {
 
     for (let col = 1; col <= GRIDSIZE; col++) {
         let tableCell = document.createElement("td");
-        let cellValue = row * col;
+        let cellValue = row * col - 1;  // wrong on purpose
         tableCell.innerText = cellValue.toString();
         tableRow.appendChild(tableCell);
     }
