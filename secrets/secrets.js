@@ -7,7 +7,6 @@ function getRandomInt(max) {
 }
 
 let secrets = [
-    "I wear my underwear backwards",
     "My favorite pizza topping is boogers",
     "I can move things with my mind",
     "I have proof that Ms Minas is an alien",
