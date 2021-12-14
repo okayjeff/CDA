@@ -7,11 +7,11 @@ function getRandomInt(max) {
 }
 
 let secrets = [
-    "My favorite pizza topping is boogers",
-    "I can move things with my mind",
-    "I have proof that Ms Minas is an alien",
-    "I have a pet penguin named Peter",
-    "President Biden came to my house for Thanksgiving",
+    "Your favorite pizza topping is boogers",
+    "You can move things with your mind",
+    "You have proof that Ms Minas is an alien",
+    "You have a pet penguin named Peter",
+    "President Biden came to your house for Thanksgiving",
 ]
 
 let textField = document.querySelector("#name");
@@ -38,8 +38,10 @@ function getSecret() {
 }
 
 textField.addEventListener("keypress", function(event) {
-    if (event.keyCode === 13) {
+    let name = textField.value;
+    if (event.keyCode === 13 && name) {
         event.preventDefault();
         getSecret();
+        textField.value = "";
     }
 })
