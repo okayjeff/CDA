@@ -20,7 +20,7 @@ let secretContainer = document.querySelector("#secret");
 function getSecret() {
     if (play) {
         let name = textField.value;
-        if (name === "Ms Minas") {
+        if (name.toLowerCase() === "ms minas") {
             secretContainer.innerHTML = `<span class="fs-1 text-danger">YOU'RE AN ALIEN!!!</span>`;
         } else {
             let choice = getRandomInt(secrets.length);
