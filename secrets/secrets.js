@@ -21,7 +21,7 @@ function getSecret() {
     if (play) {
         let name = textField.value;
         if (name === "Ms Minas") {
-            secretContainer.innerHTML = `<span class="fs-1 text-danger">I'M AN ALIEN!!!</span>`;
+            secretContainer.innerHTML = `<span class="fs-1 text-danger">YOU'RE AN ALIEN!!!</span>`;
         } else {
             let choice = getRandomInt(secrets.length);
             let secret = secrets[choice];
